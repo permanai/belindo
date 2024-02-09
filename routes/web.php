@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ProdukController;
 
 
 
@@ -20,4 +21,5 @@ Route::get('/admin/register', function () {
     return view('admin/register');
 });
 
+Route::get('/produk1', [ProdukController::class, 'produk']);
 
