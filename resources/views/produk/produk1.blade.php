@@ -79,6 +79,15 @@ body {
     border: none;
     cursor: pointer;
     font-size: 16px;
+    margin-right: 10px;
+}
+
+.product__button--cart {
+    background-color: #f80;
+}
+
+.product__button--buy {
+    background-color: #3bb143;
 }
 
 .product__button:hover {
@@ -139,12 +148,13 @@ body {
             <div class="product__info">
                 <h1 class="product__name">Product Name</h1>
                 <p class="product__price">Rp 100.000</p>
-                <button class="product__button">Tambah ke Keranjang</button>
-            </div>
-        </div>
-        <div class="product__description">
+                <div class="product__description">
             <h2 class="product__description-title">Deskripsi Produk</h2>
             <p class="product__description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies tortor in metus eleifend, ut molestie lorem pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam id arcu orci. Cras auctor euismod ex, in feugiat risus.</p>
+            <button class="product__button">Tambah ke Keranjang</button>
+                <button class="product__button product__button--buy">Beli</button>
+        </div>
+            </div>
         </div>
     </div>
 </main>
