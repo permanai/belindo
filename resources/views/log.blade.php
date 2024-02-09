@@ -162,26 +162,12 @@
                             <button type="submit" class="btn btn-primary">
                                 {{ __('Login') }}
                             </button>
-<<<<<<< Updated upstream
                             <div class="register-container">
                                 <a href="{{ route('register') }}" class="btn btn-link">{{ __('Register') }}</a> <!-- Tombol Register -->
                             </div>
                         </div>
                     </form>
                     <a href="#" class="btn btn-link login-google-btn">{{ __('Login with Google') }}</a> <!-- Tombol Login with Google -->
-=======
-                        </div>
-                    </form>
-                    <div class="text-center">
-                        <a class="btn btn-link" href="{{ route('register') }}">
-                            {{ __('Register') }}
-                        </a>
-                        <!-- Tambahkan link login with Google -->
-                        <a class="btn btn-link" href="{{ route('login.google') }}">
-                            {{ __('Login with Google') }}
-                        </a>
-                    </div>
->>>>>>> Stashed changes
                 </div>
             </div>
         </div>
