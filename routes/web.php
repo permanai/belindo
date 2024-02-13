@@ -19,3 +19,7 @@ Route::post('/login', [LoginController::class, 'login']);
 // Rute untuk login menggunakan Google
 Route::get('/login/google', [LoginController::class, 'redirectToGoogle'])->name('login.google');
 Route::get('/login/google/callback', [LoginController::class, 'handleGoogleCallback']);
+
+// Rute untuk halaman registrasi dan proses registrasi
+Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register');
+Route::post('/register', [RegisterController::class, 'register']);

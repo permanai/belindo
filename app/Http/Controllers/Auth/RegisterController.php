@@ -7,5 +7,16 @@ use Illuminate\Http\Request;
 
 class RegisterController extends Controller
 {
-    //
+    /**
+     * Show the registration form.
+     *
+     * @return \Illuminate\View\View
+     */
+    public function showRegistrationForm()
+    {
+        return view('auth.register');
+    }
+
+    // Method-method lainnya...
 }
+
