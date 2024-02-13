@@ -11,6 +11,12 @@ Route::get('/', function () {
 Route::get('/log', function () {
     return view('log');
 });
+Route::get('/footer/about', function () {
+    return view('footer/about');
+});
+Route::get('/admin/register', function () {
+    return view('admin/register');
+});
 
 // Rute untuk halaman login dan proses login
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
