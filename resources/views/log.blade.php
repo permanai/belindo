@@ -117,10 +117,13 @@
 <body>
 
 <div class="container">
+    <a href="{{ url('/') }}" class="btn btn-link back-link"><i class="fas fa-arrow-left"></i> Back</a> <!-- Pindahkan panah "Back" ke sini -->
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="card mt-5">
-                <div class="card-header">{{ __('Login') }}</div>
+                <div class="card-header">
+                    {{ __('Login') }}
+                </div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
@@ -155,7 +158,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group mb-0">
+                        <div class="form-group">
                             <button type="submit" class="btn btn-primary">
                                 {{ __('Login') }}
                             </button>
@@ -170,6 +173,25 @@
         </div>
     </div>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js"></script>
+
+<script>
+    // Tampilkan atau sembunyikan password saat tombol di klik
+    document.getElementById("togglePassword").addEventListener("click", function() {
+        var passwordInput = document.getElementById("password");
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            this.textContent = "Hide";
+        } else {
+            passwordInput.type = "password";
+            this.textContent = "Show";
+        }
+    });
+</script>
 
 </body>
 </html>
