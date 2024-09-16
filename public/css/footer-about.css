@@ -1,0 +1,55 @@
+.image-container {
+    position: relative;
+    width: 100%; 
+    height: 450px; 
+    overflow: hidden; 
+}
+
+.image-container img {
+    width: 100%; 
+}
+
+.image-text {
+    position: absolute;
+    bottom: 0; 
+    width: 100%;
+    padding: 20px; 
+    box-sizing: border-box; 
+    color: rgb(0, 0, 0);
+    font-size: 45px;
+    text-align: center;
+    font-style: italic;
+    
+}
+.text {
+    position: absolute;
+    top: calc(100% + 20px); /* Menempatkan teks tepat di bawah tulisan "About Us" dengan jarak 20px */
+    left: 0;
+    width: 100%; /* Menggunakan lebar 100% untuk memastikan teks memenuhi lebar container */
+    max-height: calc(100vh - 450px - 40px); 
+    
+    padding: 20px;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.8); 
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .container1 {
+    display: flex; /* Menggunakan flexbox untuk mengatur tata letak */
+    justify-content: space-between; /* Membuat elemen berada pada ujung kiri dan kanan */
+    align-items: center; /* Memastikan elemen berada di tengah vertikal */
+}
+
+.text {
+    order: 2; /* Mengatur teks menjadi elemen ke-2 dalam urutan tampilan */
+    /* CSS lainnya sesuai kebutuhan Anda */
+}
+
+.image-text1 {
+    order: 1; /* Mengatur gambar menjadi elemen ke-1 dalam urutan tampilan */
+    /* CSS lainnya sesuai kebutuhan Anda */
+}
